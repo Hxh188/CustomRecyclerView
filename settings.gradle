@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':recyclerview_lib'
 rootProject.name='CustomRecyclerView'
