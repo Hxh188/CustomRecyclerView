@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         final RefreshRecyclerViewContainer refre_rv = findViewById(R.id.refre_rv);
 
-        for(int i = 0;i < 15;i++)
-        {
-            list.add("");
-        }
+//        for(int i = 0;i < 15;i++)
+//        {
+//            list.add("");
+//        }
 
         refre_rv.setWrapAdapter(new SimpleAdapter(list));
         refre_rv.setRefreshListListener(new RefreshRecyclerViewContainer.OnRefreshListListener() {

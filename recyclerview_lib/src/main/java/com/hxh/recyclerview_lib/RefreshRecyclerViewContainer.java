@@ -254,7 +254,13 @@ public class RefreshRecyclerViewContainer extends LinearLayout {
 
         @Override
         public int getItemCount() {
-            return innerAdapter.getItemCount() + 1;
+            if(innerAdapter.getItemCount() == 0)
+            {
+                return 0;
+            }else
+            {
+                return innerAdapter.getItemCount() + 1;
+            }
         }
 
         public void setState(int state) {
